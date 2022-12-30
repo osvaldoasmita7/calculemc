@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+  background-color: black !important;
+  height: 100%;
+  width: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-gray-cs {
+  color: #7b7b7b;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ls0 {
+  line-height: 0.5;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form-check-input:checked {
+  background-color: rgb(129, 104, 232);
+  border-color: rgb(129, 104, 232);
 }
-
-.App-link {
-  color: #61dafb;
+.form-control {
+  color: white !important;
+  background-color: transparent !important;
+  border: #212123 solid !important;
+  border-radius: 5rem !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-primary-cs {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: rgb(129, 104, 232);
+  --bs-btn-border-color: rgb(129, 104, 232);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(129, 104, 232);
+  --bs-btn-hover-border-color: rgb(129, 104, 232);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(129, 104, 232);
+  --bs-btn-active-border-color: rgb(129, 104, 232);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(129, 104, 232);
+  --bs-btn-disabled-border-color: rgb(129, 104, 232);
+  border-radius: 5rem;
+}
+.btn-secondary-cs {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: transparent !important;
+  --bs-btn-border-color: transparent !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: transparent !important;
+  --bs-btn-hover-border-color: transparent !important;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: transparent !important;
+  --bs-btn-active-border-color: transparent !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: transparent !important;
+  --bs-btn-disabled-border-color: transparent !important;
+  border-radius: 5rem;
 }
