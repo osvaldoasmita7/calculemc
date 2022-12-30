@@ -1,3 +1,17 @@
+# Desarrollado por Ing. Ponce Hernández Osvaldo Francisco
+
+# Tecnologías: ReactJs con Typescript.
+
+# Gracias por visitar mi proyecto
+
+# En este proyecto hice uso de peticiones a apis, uso de async await, hooks, helpers, interfaces y componentes personalizados.
+
+# En el archivo .ENV favor de poner la ruta donde está correndo el backend sustituyendo el valor de REACT_APP_API_URL.
+
+# Realizar npm install para instalar todas las dependencias
+
+# Para correr el proyecto realizar npm run start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
