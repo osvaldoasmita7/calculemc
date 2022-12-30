@@ -6,6 +6,7 @@ export const Navbar = () => {
         <img
           src={require("../../assets/images/logo.jpg")}
           style={{ maxWidth: 200 }}
+          alt=""
         ></img>
 
         <button

@@ -1,5 +1,3 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { InputCustom } from "../InputCustom";
 import { InputRadio } from "../../components/InputRadio";
 import { useForm } from "../../hooks/useForm";
@@ -17,7 +15,7 @@ export const Form = () => {
   } = useForm();
 
   return (
-    <div className="row">
+    <div className="row col-12">
       <div className="col-md-6 col-lg-5 px-4">
         <form onSubmit={calculate}>
           <InputRadio
@@ -91,7 +89,14 @@ export const Form = () => {
         </form>
       </div>
       <div className="col-md-6 col-lg-4 mx-auto px-4 ">
-        {results.BFP || results.SI ? (
+        {isNaN(results.SI) ? (
+          <h1 className="text-white">
+            El resultado no es calculable ya que la respuesta fue {results.SI}
+          </h1>
+        ) : (
+          ""
+        )}
+        {(results.BFP || results.SI) && !isNaN(results.SI) ? (
           <Calification {...results}></Calification>
         ) : (
           ""
